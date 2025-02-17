@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "../vpc-module"
+  source = "git::https://github.com/ravireddy6198/modules.git//vpc-module?ref=main"
   cidr_block = var.cidr_block
   project_name = var.project_name
   environment = var.environment
